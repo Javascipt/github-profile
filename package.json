@@ -12,7 +12,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "xo && ava"
+    "test": "ava"
   },
   "files": [
     "index.js"
@@ -31,8 +31,7 @@
     "gh-got": "^6.0.0"
   },
   "devDependencies": {
-    "ava": "*",
-    "xo": "*"
+    "ava": "*"
   },
   "xo": {
     "esnext": true
