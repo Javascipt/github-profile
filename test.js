@@ -2,11 +2,11 @@ import test from 'ava';
 import m from './';
 
 test('gets GitHub username from email', async t => {
-	t.is(await m('sindresorhus@gmail.com'), 'sindresorhus');
+	t.is((await m('sindresorhus@gmail.com')).login, 'sindresorhus');
 });
 
 test('gets GitHub username from email using Commit Search API', async t => {
-	t.is(await m('markdotto@gmail.com'), 'mdo');
+	t.is((await m('markdotto@gmail.com')).login, 'mdo');
 });
 
 test('rejects when GitHub has no user for the email', async t => {

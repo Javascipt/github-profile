@@ -46,5 +46,12 @@ module.exports = (email, token) => {
 		}
 
 		return data.items[0].login;
+	}).then(result => {
+		return result && ghGot('users/' + result, {
+			token,
+			headers: {
+				'user-agent': 'https://github.com/sindresorhus/github-username'
+			}
+		}).then(response => response.body);
 	});
 };
