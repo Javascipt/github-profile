@@ -1,13 +1,12 @@
 {
-  "name": "github-username",
-  "version": "4.1.0",
-  "description": "Get a GitHub username from an email address",
+  "name": "github-profile",
+  "version": "1.0.0",
+  "description": "Get a GitHub profile from an email address",
   "license": "MIT",
-  "repository": "sindresorhus/github-username",
+  "repository": "Javascipt/github-profile",
   "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
+    "name": "Khalid Rehioui",
+    "email": "rehioui@gmail.com",
   },
   "engines": {
     "node": ">=4"
@@ -25,7 +24,8 @@
     "email",
     "address",
     "gh",
-    "git"
+    "git",
+    "profile"
   ],
   "dependencies": {
     "gh-got": "^6.0.0"
