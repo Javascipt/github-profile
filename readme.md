@@ -17,8 +17,8 @@ $ npm install github-profile
 ```js
 const githubProfile = require('github-profile');
 
-githubProfile('sindresorhus@gmail.com').then(username => {
-    console.log(username);
+githubProfile('sindresorhus@gmail.com').then(profile => {
+    console.log(profile);
     /* => 
         {
             "login": "sindresorhus",
@@ -75,7 +75,7 @@ Type: `string`
 
 GitHub [personal access token](https://github.com/settings/tokens/new).
 
-:warning: This repo may consume up to 3 API calls toward your [github rate limit](https://developer.github.com/v3/rate_limit/).
+:warning: This module may consume up to 3 API calls toward your [github rate limit](https://developer.github.com/v3/rate_limit/).
 
 ## Related
 
